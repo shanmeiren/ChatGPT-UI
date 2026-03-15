@@ -9,7 +9,7 @@ import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { getServerSideConfig } from "./config/server";
 
 export const metadata: Metadata = {
-  title: "NextChat",
+  title: "Abing gpt",
   description: "Your personal ChatGPT Chat Bot.",
   appleWebApp: {
     title: "NextChat",
@@ -25,6 +25,10 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: light)", color: "#fafafa" },
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
+  appleWebApp: {
+    title: "Abing GPT",
+    statusBarStyle: "default",
+  }
 };
 
 export default function RootLayout({
